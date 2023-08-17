@@ -1,0 +1,487 @@
+@font-face {
+  font-family: sf;
+  src: url(./SF-Pro-Text-Regular.otf);
+}
+.word-animation {
+  /* display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; */
+}
+
+.animated-word {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: slide-up 0.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--delay));
+  -webkit-animation: slide-up 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+* {
+  font-family: sf, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+
+  padding: 0 4vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  backdrop-filter: blur(0.5px);
+  border-bottom: 5px solid transparent;
+  transition: border-bottom-color 0.5s ease-in-out;
+  gap: 1rem;
+}
+.hero-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 12vw;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 6vh;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  padding: 0 4vw;
+  color: white;
+
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  z-index: 1;
+  background-color: #7f26f447;
+  position: relative;
+  top: -2.95rem;
+}
+.services-title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 3rem 0;
+  text-decoration: underline;
+}
+.giphy-embed {
+  opacity: 0.1;
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgb(0, 0, 0, 4) inset;
+}
+.bg-image {
+  /* background-image: url("./Diagram\ -\ Landing\ Page\ Salon\ \(Community\)\ \(Community\)\ \(Community\).png");
+
+  background-position: center; */
+  background: linear-gradient(
+    120deg,
+    rgba(33, 32, 48, 1) 0%,
+    rgba(89, 71, 207, 1) 44%,
+    rgba(250, 207, 201, 1) 100%
+  );
+
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.robot {
+  position: fixed !important;
+  bottom: 5vh;
+  right: 0;
+  z-index: -1;
+  width: 35vw;
+
+  animation: slide 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1rem);
+  }
+}
+
+.visionaries {
+  height: 50vh;
+}
+
+.Button-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*havealineargradientbutsomethingdifferent*/
+  color: aliceblue;
+  background: linear-gradient(
+    120deg,
+    rgba(250, 207, 201, 1) 0%,
+    rgba(33, 32, 48, 1) 10%,
+    rgba(89, 71, 207, 1) 88%,
+    rgba(250, 207, 201, 1) 100%
+  );
+  /*animationforgradient*/
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+  -webkit-animation: gradient 4s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 30%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 30%;
+  }
+}
+.Button-section h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.Button-section button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.655);
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Button-section button:hover {
+  background-color: #4605a8;
+  color: white;
+  transform: scale(1.05);
+}
+.consult-btn {
+  background-color: #c5c5c5;
+  padding: 1vw 2vw;
+}
+
+.services-disable {
+  pointer-events: none;
+  width: 300px;
+  height: 480px;
+}
+
+.giphy-embed-images {
+  pointer-events: none;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.655);
+  font-size: 0.8rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.book-btn:hover {
+  background-color: #4605a8;
+  color: white;
+  transform: scale(1.05);
+}
+.nieches {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* color: white; */
+}
+
+.nieches-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.niche {
+  width: 30vw;
+  border-radius: 0.5rem;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.niche img {
+  width: 7vw;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.approach-section {
+  margin: 50px auto;
+  width: 80vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.approach-item {
+  margin: 30px 0;
+  padding: 20px;
+
+  border-radius: 8px;
+  /* add a radial gradient which is white in middle  */
+}
+
+.blue {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 40%,
+    #8dcef785 100%
+  );
+}
+
+.cyan {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 40%,
+    #8df7f799 100%
+  );
+}
+
+.purple {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 40%,
+    #c48df785 100%
+  );
+}
+.approach-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.approach-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+hr {
+  border: 1px solid #800085;
+  width: 100%;
+}
+
+footer {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  background-color: #6207da95;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.services-box {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* width: 80vw; */
+  /* height: 100%; */
+  flex-wrap: wrap;
+}
+
+.services-box-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: 65vh;
+  padding: 10vw;
+  /* background-color: #e8cdff; */
+  background-color: white;
+  border-radius: 8px;
+  padding: 2vw;
+  /* border: 1px solid #000; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-box-sub:hover {
+  transform: scale(1.003);
+  transition: all 0.8s ease-in-out;
+  background-color: #f9eeff;
+}
+
+.services-box-sub h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.services-box-sub p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    font-size: 1.5rem;
+    width: 90vw;
+    margin-bottom: 8vw;
+  }
+
+  .hero {
+    height: 97.5vh;
+  }
+
+  .navbar {
+    padding: 0 2vw;
+  }
+
+  .services {
+    top: -1.95rem;
+  }
+
+  .services-title {
+    font-size: 3rem;
+  }
+
+  .robot {
+    width: 50vw;
+  }
+
+  .Button-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .Button-section button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .nieches {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nieches-div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .niche {
+    width: 80vw;
+    padding: 0.5rem;
+  }
+
+  .niche img {
+    width: 20vw;
+  }
+
+  .approach-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .approach-item {
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  .approach-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .approach-item p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 1vw;
+  }
+
+  .services-box {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .services {
+    height: auto;
+    padding-bottom: 2vw;
+  }
+
+  .services-box-sub {
+    width: 80vw !important;
+    padding: 5vw !important;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Add specific styles for tablet layout if needed */
+}

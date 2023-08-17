@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Comic+Neue&family=Poppins&family=Victor+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script>
+      $(document).mousemove(function (event) {
+        windowWidth = $(window).width();
+        windowHeight = $(window).height();
+
+        mouseXpercentage = Math.round((event.pageX / windowWidth) * 100);
+        mouseYpercentage = Math.round((event.pageY / windowHeight) * 100);
+
+        $(".bg-image").css(
+          "background",
+          "radial-gradient( 80em 80em  at " +
+            mouseXpercentage +
+            "% " +
+            mouseYpercentage +
+            "%,rgba(33, 32, 48, 1),rgba(89, 71, 207, 1), rgba(250, 207, 201, 1))"
+        );
+      });
+    </script>
+
+    <style>
+    
+    </style>
+  </head>
+
+  <body>
+    <!-- making a div to add background image to -->
+    <div class="bg-image">
+      <div
+        style="width: 100%; height: 0; padding-bottom: 100%; position: relative"
+      >
+        <iframe
+          src="https://giphy.com/embed/KfZHOqVdtzmMSLquhY"
+          width="100%"
+          height="100%"
+          style="position: absolute"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p>
+        <a
+          href="https://giphy.com/stickers/trippy-acid-tunnel-KfZHOqVdtzmMSLquhY"
+        ></a>
+      </p>
+    </div>
+    <nav class="navbar">
+      <p>Infinix AI</p>
+      <a href="https://calendly.com/infinix-ai/discovery"></a>
+        <button class="book-btn">
+          <div class="first"><div>Book a Consultation</div></div>
+        </button>
+      </a>
+    </nav>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Infinix</h1>
+        <div class="word-animation">
+          <span class="animated-word">We</span>
+          <span class="animated-word">specialize</span>
+          <span class="animated-word">in</span>
+          <span class="animated-word">delivering</span>
+          <span class="animated-word">automation</span>
+          <span class="animated-word">solutions</span>
+          <span class="animated-word">to</span>
+          <span class="animated-word">elevate</span>
+          <span class="animated-word">our</span>
+          <span class="animated-word">clients'</span>
+          <span class="animated-word">businesses,</span>
+          <span class="animated-word">crafting</span>
+          <span class="animated-word">highly</span>
+          <span class="animated-word">efficient</span>
+          <span class="animated-word">tools</span>
+          <span class="animated-word">that</span>
+          <span class="animated-word">optimize</span>
+          <span class="animated-word">both</span>
+          <span class="animated-word">sales</span>
+          <span class="animated-word">processes</span>
+          <span class="animated-word">and</span>
+          <span class="animated-word">customer</span>
+          <span class="animated-word">support</span>
+          <span class="animated-word">functions</span>
+        </div>
+      </div>
+
+      <!-- <img src="./robot.png" alt="" class="robot" /> -->
+    </div>
+    <div class="services">
+      <h1 class="services-title">Our Services</h1>
+      <div class="services-box">
+        <div class="services-box-sub">
+          <iframe
+            src="https://giphy.com/embed/VZV471U1wUShjcsMlE"
+            width="300"
+            height="480"
+            frameborder="0"
+            class="giphy-embed-images"
+            allowfullscreen
+          ></iframe>
+          <h3>AI DEVELOPMENT</h3>
+          <p>
+            We develop AI solutions that help you automate your business
+            processes and increase your efficiency.
+          </p>
+        </div>
+        <div class="services-box-sub">
+          <!-- <div class="services-disable"> -->
+          <iframe
+            src="https://giphy.com/embed/JEmzp7bnrWZHWk7BOh"
+            width="300"
+            height="480"
+            frameborder="0"
+            class="giphy-embed-images"
+            allowfullscreen
+          ></iframe>
+          <!-- </div> -->
+          <h3>LEAD GENERATION</h3>
+          <p>
+            We help you generate leads for your business by creating highly
+            targeted ads and automating your sales processes.
+          </p>
+        </div>
+        <div class="services-box-sub">
+          <iframe
+            src="https://giphy.com/embed/h4NcajKbIjNMWp2zfM"
+            width="300"
+            height="480"
+            frameborder="0"
+            class="giphy-embed-images"
+            allowfullscreen
+          ></iframe>
+
+          <h3 style="
+          margin-bottom: 10px;
+      ">Workflow Integration</h3>
+          <p style="
+          margin-bottom: 10px;
+      ">
+            Seamlessly integrate automation into your existing workflows for
+            enhanced productivity
+          </p>
+        </div>
+        <!-- <div class="services-box-sub">
+          <h3>CRM AUTOMATION</h3>
+          <p>
+            We help you automate your customer relationship management processes
+            to increase your customer satisfaction.
+          </p>
+          <span class="cursor"></span>
+        </div> -->
+      </div>
+    </div>
+    <div class="nieches">
+      <div class="nieches-div">
+        <div class="niche">
+          <figure class="">
+            <img
+              decoding="async"
+              src="https://infinix-ai.com/wp-content/themes/astra/inc/assets/images/starter-content/building.svg"
+              alt=""
+              class="wp-image-134"
+            />
+          </figure>
+
+          <h3 class="" style="margin-top: 16px">Real Estate</h3>
+
+          <p></p>
+        </div>
+        <!--  -->
+        <div class="niche">
+          <figure class="">
+            <img
+              decoding="async"
+              src="https://infinix-ai.com/wp-content/themes/astra/inc/assets/images/starter-content/shopping-bag.svg"
+              alt=""
+              class="wp-image-135"
+            />
+          </figure>
+
+          <h3 class="" style="margin-top: 16px">Ecommerce</h3>
+
+          <p></p>
+        </div>
+        <!--  -->
+        <div class="niche">
+          <figure class="">
+            <img
+              decoding="async"
+              src="https://infinix-ai.com/wp-content/themes/astra/inc/assets/images/starter-content/blog.svg"
+              alt=""
+              class="wp-image-136"
+            />
+          </figure>
+
+          <h3
+            class="wp-block-heading has-text-align-left"
+            style="margin-top: 16px"
+          >
+            Agencies
+          </h3>
+
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <h2>Our Approach</h2>
+    <section class="approach-section">
+      <div class="approach-item purple">
+        <h3>Collaboration</h3>
+        <p>
+          We work closely with you to understand your business needs and create
+          customized automation strategies.
+        </p>
+      </div>
+      <div class="approach-item purple">
+        <h3>Expertise</h3>
+        <p>
+          Each team member brings a unique skill set and a wealth of experience
+          to ensure your success.
+        </p>
+      </div>
+      <div class="approach-item purple">
+        <h3>Client-Centric</h3>
+        <p>
+          Your satisfaction is our priority. We're not just service providers;
+          we're your partners in growth.
+        </p>
+      </div>
+    </section>
+
+    <div class="Button-section">
+      <h1>Elevate Your Business with Our Services</h1>
+      <a href="https://calendly.com/infinix-ai/discovery"
+        ><button class="book-btn consult-btn">
+          Book A Free Consultation
+        </button></a
+      >
+    </div>
+
+    <hr />
+
+    <footer>
+      <div>All Rights Reserved - MFBA LLC</div>
+      <!-- email -->
+      <div>
+        <a href="mailto:hello@infinix-ai.com">hello@infinix-ai.com</a>
+      </div>
+    </footer>
+    <script>
+      document.body.onmousemove = function (e) {
+        document.documentElement.style.setProperty("--x", e.clientX + "px");
+        document.documentElement.style.setProperty("--y", e.clientY + "px");
+      };
+    </script>
+  </body>
+</html>
